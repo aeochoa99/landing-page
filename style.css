@@ -7,21 +7,31 @@ body {
 .section-1 {
     display: flex;
     flex-direction: column;
+    gap: 100px;
     background-color: #1F2937;
     font-family: Roboto, sans-serif;
 }
 
+h1 {
+    margin: 0;
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
 .header {
+    padding-top: 10px;
+}
+
+.header, .hero {
     display: flex;
     justify-content: space-between;
-    padding-top: 10px;
 }
 
 .header p {
     color: #F9FAF8;
     font-size: 24px;
     margin: 0;
-    padding-left: 15%;
 }
 
 .header-links {
@@ -33,5 +43,45 @@ body {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+.hero-text, .header p {
+    padding-left: 15%;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #E5E7EB;
+    margin: 0;
+}
+
+.hero-img, .header-links {
     padding-right: 15%;
+}
+
+.hero-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.hero-img p {
+    background-color: #6f6f6f;
+    padding: 100px 150px 100px 150px;
+    margin: 0;
+}
+
+.hero-text button {
+    padding: 5px 15px 5px 15px;
+    background-color: #3882f6;
+    color: #E5E7EB;
+    border-radius: 5px;
 }
